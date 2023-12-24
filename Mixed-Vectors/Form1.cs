@@ -25,7 +25,17 @@ namespace Mixed_Vectors
         private void ButtonCalculate_Click(object sender, EventArgs e)
         {
             Calculate();
-            MessageBox.Show("Рассчёт выполнен!");
+            if (textBoxFirstVectorX.Text != string.Empty && textBoxFirstVectorY.Text != string.Empty && textBoxFirstVectorZ.Text != string.Empty
+                    && textBoxSecondVectorX.Text != string.Empty && textBoxSecondVectorY.Text != string.Empty && textBoxSecondVectorZ.Text !=
+                    string.Empty && textBoxThirdVectorX.Text != string.Empty && textBoxThirdVectorY.Text != string.Empty && textBoxThirdVectorZ.Text
+                    != string.Empty)
+            {
+                MessageBox.Show("Рассчёт выполнен!");
+            }
+            else
+            {
+                MessageBox.Show("Рассчёт не выполнен!");
+            }
         }
 
         // ButtonInstruction_Click() вызывается при нажатии на кнопку "Инструкция"
